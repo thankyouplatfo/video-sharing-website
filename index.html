@@ -9,9 +9,9 @@
  <link rel="stylesheet" href="css/bootstrap-rtl.css">
 </head>
 
-<body>
+<body class="py-5 ">
  <!-- top menu -->
- <nav class="navbar navbar-expand-md navbar-light bg-light rtl">
+ <nav class="navbar navbar-expand-xl navbar-light bg-light rtl fixed-top ">
   <a class="navbar-brand" href="index.html">معتز تيوب</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
    aria-controls="navbarSupportedContent">
@@ -19,25 +19,67 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav mx-auto">
-    <li class="nav-item active">
-     <a class="nav-link" href="index.html">المقترحة</a>
+   <ul class="navbar-nav mx-auto  ">
+    <li class="nav-item active ">
+     <a class="nav-link " href="index.html">المقترحة</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link" href="index.html">المرفوعة حديثا</a>
+     <a class="nav-link " href="index.html">وصل حديثا</a>
     </li>
-    <li class="nav-item">
-     <a class="nav-link disabled" href="index.html" tabindex="-1">الرائجة</a>
+    <li class="nav-item ">
+     <a class="nav-link " href="index.html">الرائجة</a>
+    </li>
+    <li class="nav-item ">
+     <a class="nav-link btn btn-info text-white " href="index.html" data-toggle="modal"
+      data-target="#exampleModal">تسجيل
+      الدخول</a>
     </li>
    </ul>
    <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="ابحث" aria-label="ابحث">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ابحث</button>
    </form>
+
   </div>
+  <!-- End top menu -->
  </nav>
- <!-- End top menu -->
- </nav>
+ <!-- login model -->
+ <div class="modal fade rtl" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered ">
+
+   <div class="modal-content">
+
+    <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+
+    <div class="modal-body">
+     <form>
+      <div class="form-group">
+       <label for="recipient-name" class="col-form-label">البريد الإلكتروني:</label>
+       <input type="email" class="form-control" id="recipient-name">
+      </div>
+      <div class="form-group">
+       <label for="recipient-name" class="col-form-label">كلمة المرور:</label>
+       <input type="password" class="form-control" id="recipient-name">
+      </div>
+     </form>
+    </div>
+
+    <div class="modal-footer">
+     <a href="#">تسجيل الدخول</a>
+     <a href="#" class="mx-auto">إنشاء حساب</a>
+     <button type="button" class="btn btn-primary">دخول</button>
+    </div>
+
+   </div>
+
+  </div>
+  <!-- End login model -->
+ </div>
  <!-- js files -->
  <script src="js/jquery-3.5.1.slim.min.js"></script>
  <script src="js/popper.min.js"></script>

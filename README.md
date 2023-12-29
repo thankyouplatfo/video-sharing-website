@@ -1,11 +1,12 @@
-# مشروع موقع مشاركة الفيديو () 
+# مشروع موقع مشاركة الفيديو (معتز تيوب) 
 هذا هو المشروع الثاني في كورس [دورة تطوير واجهات المستخدم](https://academy.hsoub.com/learn/front-end-web-development/)
 
 ## حيث قمت فيه بتطبيق ما تعلمته من :
 * اساسيات bootstrap
 
 ## وكانت خطوات بناء المشروع على النحو التالي:
-01. القائمة العلوية navbar
-02. إضافة Bootstrap rtl والتعرف على الأزرار Buttons
+01. القائمة العلوية [navbar](https://getbootstrap.com/docs/4.5/components/navbar/)
+02. إضافة [Bootstrap rtl](https://github.com/MahdiMajidzadeh/bootstrap-v4-rtl) والتعرف على الأزرار [Buttons](https://getbootstrap.com/docs/4.5/components/buttons/)
+03. النافذة المنبثقة [Modal](https://getbootstrap.com/docs/4.5/components/modal/)
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
