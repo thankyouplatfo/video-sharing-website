@@ -10,5 +10,6 @@
 02. إضافة [Bootstrap rtl](https://github.com/MahdiMajidzadeh/bootstrap-v4-rtl) والتعرف على الأزرار [Buttons](https://getbootstrap.com/docs/4.5/components/buttons/)
 03. النافذة المنبثقة [Modal](https://getbootstrap.com/docs/4.5/components/modal/)
 04. البطاقات [Cards](https://getbootstrap.com/docs/4.5/components/card/)
+05. صندوق العرض [display](https://getbootstrap.com/docs/4.5/utilities/display/) في Bootstrap
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)

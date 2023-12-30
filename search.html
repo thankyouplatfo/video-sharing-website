@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>معتز تيوب | نتائج البحث</title>
+ <!-- css files -->
+ <link rel="stylesheet" href="css/bootstrap-rtl.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="py-5 rtl">
+ <!-- top menu -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+  <a class="navbar-brand" href="index.html">معتز تيوب</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mx-lg-auto">
+    <li class="nav-item active">
+     <a class="nav-link" href="index.html">لك</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link ml-lg-3" href="index.html">الحديثة</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="index.html">الرائجة</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link btn btn-info text-white d-inline-block " href="index.html" data-toggle="modal"
+      data-target="#exampleModal">الدخول</a>
+    </li>
+   </ul>
+   <!-- search form -->
+   <div class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="ابحث">
+    <button onclick="location.hrer='search.html';" class="btn btn-outline-info my-2 my-sm-0" type="submit">ابحث</button>
+    <!-- End search form -->
+   </div>
+  </div>
+  <!-- End top menu -->
+ </nav>
+
+ <!-- search header -->
+ <div class="search-headr py-5 ">
+
+  <div class="container">
+
+   <div class="row">
+    <div class="col-6">
+     حوالي 800 نتيجة
+    </div>
+    <div class="col-6 text-left">
+     <span class="float-left"><i class="fa-solid fa-filter"> التصفية</i></span>
+    </div>
+   </div>
+
+   <div class="row mt-5 ">
+    <!--  checkboxes filters video row downlad history -->
+    <div class="col-md-6 col-lg-3">
+     <div class="text-center">تاريخ التحميل</div>
+     <hr>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxName">
+      <span>آخر ساعة</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxName">
+      <span>اليوم</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxName">
+      <span>هذا الشهر</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxName">
+      <span>هذا العام</span>
+     </label>
+     <!-- End checkbox checkboxes filters video row downlad history -->
+    </div>
+
+    <!--  checkboxes filters video row type -->
+    <div class="col-md-6 col-lg-3">
+     <div class="text-center"> النوع</div>
+     <hr>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxType">
+      <span>فيديو</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxType">
+      <span>قناة</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxType">
+      <span>قائمة تشغيل</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxType">
+      <span>فيلم</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxType">
+      <span>عرض</span>
+     </label>
+     <!-- End checkbox checkboxes filters video row type -->
+    </div>
+
+    <!--  checkboxes filters video row category -->
+    <div class="col-md-6 col-lg-3">
+     <div class="text-center">التصنيف</div>
+     <hr>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxCategory">
+      <span>مدى الصلة</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxCategory">
+      <span>تاريخ التحميل</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxCategory">
+      <span>عدد المشاهدات</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxCategory">
+      <span>التقييم</span>
+     </label>
+     <!-- End checkbox checkboxes filters video row cayegory -->
+    </div>
+
+    <!--  checkboxes filters video row date -->
+    <div class="col-md-6 col-lg-3">
+     <div class="text-center">المدة</div>
+     <hr>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxDate">
+      <span>قصير (أقل من 4 دقائق)</span>
+     </label>
+     <label class="d-block">
+      <input type="checkbox" class="mr-1" id="checkboxDate">
+      <span>طويل (أكثر من 20 دقيقة)</span>
+     </label>
+     </label>
+     <!-- End checkbox checkboxes filters video row date -->
+    </div>
+
+   </div>
+   <!-- End search header -->
+  </div>
+ </div>
+
+ <!-- login modal -->
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <form>
+      <div class="form-group">
+       <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+       <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+       <label for="password" class="col-form-label">كلمة المرور:</label>
+       <input type="password" class="form-control" id="password">
+      </div>
+     </form>
+    </div>
+    <div class="modal-footer">
+     <a href="index.html">انشاء حساب</a>
+     <a href="index.html" class="mx-auto ">نسيت كلمة المرور </a>
+     <button type="button" class="btn btn-primary">دخول</button>
+    </div>
+   </div>
+   <!-- End login modal -->
+  </div>
+ </div>
+
+
+
+ <script src="js/jquery-3.5.1.slim.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
