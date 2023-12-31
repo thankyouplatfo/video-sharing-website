@@ -14,6 +14,7 @@
 06. البطاقات المخصصة [Horizontal Cards](https://getbootstrap.com/docs/4.5/components/card/) كما تعرفت في هذا الدرس على
 * الموقع [bootsnipp](https://bootsnipp.com/) وهو موقع اكثر من رائع لقوالب بوتستراب 
 * الموقع [codepen](https://codepen.com) وأخذنا منه [هذا](https://codepen.io/SteveJRobertson/pen/POdvgz) القالب 
-07. تموضع العناصر [Position]()
+07. تموضع العناصر [Position](https://getbootstrap.com/docs/4.5/utilities/position/)
+08. تخصيص البطاقات لعرض الفيديو على صفحة القناة
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
