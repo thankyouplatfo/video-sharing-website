@@ -18,5 +18,6 @@
 08. تخصيص البطاقات لعرض الفيديو على صفحة القناة
 09. العنصر [video](https://wiki.hsoub.com/HTML/video) وخصائصه
 10. صفحة المشاهدة
+11. القائمة المنسدلة [dropdown](https://getbootstrap.com/docs/4.5/components/dropdowns/) والتعليقات Comments 
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
