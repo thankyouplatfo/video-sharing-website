@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> معتز تيوب | مشاهدة</title>
+ <!-- css files -->
+ <link rel="stylesheet" href="css/bootstrap-rtl.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="py-5 rtl">
+ <!-- top menu -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+  <a class="navbar-brand" href="index.html">معتز تيوب</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mx-lg-auto">
+    <li class="nav-item active">
+     <a class="nav-link" href="index.html">لك</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link ml-lg-3" href="index.html">الحديثة</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="index.html">الرائجة</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link btn btn-info text-white d-inline-block" href="index.html" data-toggle="modal"
+      data-target="#exampleModal">الدخول</a>
+    </li>
+   </ul>
+   <!-- search form -->
+   <div class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="ابحث">
+    <button onclick="location.hrer='search.html';" class="btn btn-outline-info my-2 my-sm-0" type="submit">ابحث</button>
+    <!-- End search form -->
+   </div>
+  </div>
+  <!-- End top menu -->
+ </nav>
+
+ <!-- login modal -->
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <form>
+      <div class="form-group">
+       <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+       <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+       <label for="password" class="col-form-label">كلمة المرور:</label>
+       <input type="password" class="form-control" id="password">
+      </div>
+     </form>
+    </div>
+    <div class="modal-footer">
+     <a href="index.html">انشاء حساب</a>
+     <a href="index.html" class="mx-auto ">نسيت كلمة المرور </a>
+     <button type="button" class="btn btn-primary">دخول</button>
+    </div>
+   </div>
+   <!-- End login modal -->
+  </div>
+ </div>
+
+ <!-- watch page -->
+ <div class="watch-page">
+  <div class="container-fluid">
+
+   <!-- main video container -->
+   <div class="video-section bg-white pt-5 ">
+    <div class="card border border-white ">
+     <div class="row">
+      <div class="col-lg-7">
+       <video class="w-100 " controls poster="src/img/poster.png" played>
+        <!-- <track kind="captions" src="src/video/caption.vtt" srclang="ar" label="عربي" default> -->
+        <source src="src/video/khamsat.webm" type="video/webm">
+        <source src="src/video/khamsat.mp4" type="video/mp4">
+        لا يدعم متصفحك العنصر <code>video</code>.
+       </video>
+      </div>
+      <div class="col-lg-5">
+       <small class="text-muted">
+        <i class="mr-2 fa-solid fa-film">
+         <span class="d-inline-block">ثلاثة الاف مشاهدة</span>
+        </i>
+        <i class="mr-2 fa-solid fa-stopwatch">
+         <span class="d-inline-block">قبل خمس ساعات</span>
+        </i>
+       </small>
+       <a href="chanel.html" class="chanel-img">
+        <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+        <span>معتز تيوب</span>
+       </a>
+       <div class="card-block">
+        <a href="#" class="navbar-brand ml-0 mb-2 mt-0 pt-0  text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        <p class="text-left">
+         Deserunt reprehenderit incididunt incididunt eu incididunt id. Lorem irure cupidatat incididunt commodo.
+         Deserunt do reprehenderit elit eu commodo sint proident voluptate excepteur pariatur ut duis proident. Tempor
+         ea eiusmod eiusmod ad cupidatat et ullamco of
+        </p>
+       </div>
+       <div class="watch-icon">
+        <i class="far fa-heart rounded-circle bg-secondary text-white p-1 " title="أحببته"></i>
+        <i class="far fa-clock rounded-circle bg-secondary text-white p-1 " title="المشاهدة لاحقا"></i>
+        <i class="far fa-share-square rounded-circle bg-secondary text-white p-1 " title="مشاركة"></i>
+        <i class="far fa-play-circle rounded-circle bg-secondary text-white p-1 " title="إضافة الى قائمة التشغيل"></i>
+        <span class="ml-3">إبلاغ</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- End main video container -->
+   </div>
+
+   <!-- suggestions & commets containr-->
+   <div class="row mt-4 ">
+
+    <!-- commets contaier -->
+    <div class="col-lg-7">
+
+     <h2 class="my-5 display-6 text text-boler d-inline-block ">التعليقات 4</h2>
+     <div class="connents d-inline-block">
+      <div class="commets-detals">
+       <div class="dropdown">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">
+         Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+         <a class="dropdown-item" href="#">التاريخ</a>
+         <a class="dropdown-item" href="#">الأحدث</a>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- End commets contaier -->
+    </div>
+
+    <!-- suggestions -->
+    <div class="col-lg-5">
+
+     <h2 class="my-5 display-6 px-3 text text-boler">الاقتراحات</h2>
+
+     <!-- proposition 1 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted   mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img   ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 1 -->
+     </div>
+
+     <!-- proposition 2 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 2 -->
+     </div>
+
+     <!-- proposition 3 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 3 -->
+     </div>
+
+     <!-- proposition 4 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 4 -->
+     </div>
+
+     <!-- proposition 5 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 5 -->
+     </div>
+
+     <!-- proposition 6 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 6 -->
+     </div>
+
+     <!-- proposition 7 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 7 -->
+     </div>
+
+     <!-- proposition 8 -->
+     <div class="card p-2 mb-4">
+      <div class="row">
+       <div class="col-sm-5">
+        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+       </div>
+       <div class="col-sm-7">
+        <div class="card-block mx-2 pl-0 ml-0">
+         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        </div>
+        <small class="text-muted d-sm-block mb-1 ">
+         <i class="mr-2 fa-solid fa-film">
+          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+         </i>
+        </small>
+        <a href="chanel.html" class="chanel-img d-sm-block ">
+         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>معتز تيوب</span>
+        </a>
+       </div>
+      </div>
+      <!-- End proposition 8 -->
+     </div>
+
+     <!-- End suggestions & commets containr -->
+    </div>
+
+   </div>
+
+  </div>
+ </div>
+ <script src="js/jquery-3.5.1.slim.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

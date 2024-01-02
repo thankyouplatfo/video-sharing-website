@@ -17,5 +17,6 @@
 07. تموضع العناصر [Position](https://getbootstrap.com/docs/4.5/utilities/position/)
 08. تخصيص البطاقات لعرض الفيديو على صفحة القناة
 09. العنصر [video](https://wiki.hsoub.com/HTML/video) وخصائصه
+10. صفحة المشاهدة
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
