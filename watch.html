@@ -10,6 +10,10 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- js files -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="py-5 rtl">
@@ -89,8 +93,8 @@
       <div class="col-lg-7">
        <video class="w-100 " controls poster="src/img/poster.png" played>
         <!-- <track kind="captions" src="src/video/caption.vtt" srclang="ar" label="عربي" default> -->
-        <source src="src/video/khamsat.webm" type="video/webm">
-        <source src="src/video/khamsat.mp4" type="video/mp4">
+        <source src="src/video/hsoub.mp4" type="video/webm">
+        <source src="src/video/hsoub.webm" type="video/mp4">
         لا يدعم متصفحك العنصر <code>video</code>.
        </video>
       </div>
@@ -132,7 +136,7 @@
    <div class="row mt-4 order-1 ">
 
     <!-- commets contaier -->
-    <div class="col-lg-7">
+    <div class="col-lg-7" id="comments">
 
      <h2 class="my-5 display-6 text text-boler d-inline-block ">التعليقات 4</h2>
      <div class="connents d-inline-block">
@@ -155,436 +159,119 @@
       <button type="submit" class="btn btn-info mt-3 ">إضافة تعليق</button>
      </div>
 
-     <!-- comment card 1 -->
-     <div class="card mb-3 ">
-      <div class="card-body">
-       <div class="row">
-        <div class="col-2">
-         <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-         <p class="text-secondary text-center">منذ 15 دقيقة</p>
-        </div>
-        <div class="col-10">
-         <p>
-          <a class="float-right" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman
-            Akash</strong></a>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-
-         </p>
-         <div class="clearfix"></div>
-         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-          تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-         </p>
-         <p>
-          <a class="float-right btn btn-outline-info  mr-2"> <i class="fa fa-reply"></i> الردور</a>
-          <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-         </p>
-        </div>
-       </div>
-       <div class="card card-inner ml-5 mt-3 ">
-        <div class="card-body">
-         <div class="row">
-          <div class="col-md-2">
-           <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-           <p class="text-secondary text-center">منذ 15 دقيقة</p>
-          </div>
-          <div class="col-md-10">
-           <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
-           </p>
-           <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-           </p>
-           <p>
-            <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- End comment card 1 -->
+     <script>
+      $.ajax({
+       url: "comments.json",
+       type: "GET",
+       success: function (data, status) {
+        var comments='';
+        $.each(data, function (data, value) {
+         comments += `
+         <!-- comment card ${value.id} -->
+         <div class="card mb-3 ">
+ <div class="card-body">
+  <div class="row">
+   <div class="col-2">
+    <img src="${value.maleImage}" class="img img-rounded img-fluid" />
+    <p class="text-secondary text-center"> ${value.before} </p>
+   </div>
+   <div class="col-10">
+    <p>
+     <a class="float-right" href="#"><strong>${value.userNameMale}</strong></a>
+     ${value.stars}
+    </p>
+    <div class="clearfix"></div>
+    <p>
+     ${value.comment}
+    </p>
+    <p>
+     <a class="float-right btn btn-outline-info  mr-2"> <i class="fa fa-reply"></i> الردور</a>
+     <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
+    </p>
+   </div>
+  </div>
+  <div class="card card-inner ml-5 mt-3 ">
+   <div class="card-body">
+    <div class="row">
+     <div class="col-md-2">
+      <img src="${value.girlImage}" class="img img-rounded img-fluid" />
+      <p class="text-secondary text-center">${value.before2}</p>
      </div>
-
-     <!-- comment card 2 -->
-     <div class="card mb-3 ">
-      <div class="card-body">
-       <div class="row">
-        <div class="col-2">
-         <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-         <p class="text-secondary text-center">منذ 15 دقيقة</p>
-        </div>
-        <div class="col-10">
-         <p>
-          <a class="float-right" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman
-            Akash</strong></a>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-
-         </p>
-         <div class="clearfix"></div>
-         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-          تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-         </p>
-         <p>
-          <a class="float-right btn btn-outline-info  mr-2"> <i class="fa fa-reply"></i> الردور</a>
-          <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-         </p>
-        </div>
-       </div>
-       <div class="card card-inner ml-5 mt-3 ">
-        <div class="card-body">
-         <div class="row">
-          <div class="col-md-2">
-           <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-           <p class="text-secondary text-center">منذ 15 دقيقة</p>
-          </div>
-          <div class="col-md-10">
-           <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
-           </p>
-           <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-           </p>
-           <p>
-            <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- End comment card 2 -->
+     <div class="col-md-10">
+      <p><a href="#"><strong>${value.userNameGirle}</strong></a>
+      </p>
+      <p>
+       ${value.comment2}
+      </p>
+      <p>
+       <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
+      </p>
      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- End comment card ${value.id} -->
+</div>`
+        })
+        $('#comments').append(comments);
+       }
+      })
+     </script>
 
-     <!-- comment card 3 -->
-     <div class="card mb-3 ">
-      <div class="card-body">
-       <div class="row">
-        <div class="col-2">
-         <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-         <p class="text-secondary text-center">منذ 15 دقيقة</p>
-        </div>
-        <div class="col-10">
-         <p>
-          <a class="float-right" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman
-            Akash</strong></a>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-
-         </p>
-         <div class="clearfix"></div>
-         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-          تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-         </p>
-         <p>
-          <a class="float-right btn btn-outline-info  mr-2"> <i class="fa fa-reply"></i> الردور</a>
-          <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-         </p>
-        </div>
-       </div>
-       <div class="card card-inner ml-5 mt-3 ">
-        <div class="card-body">
-         <div class="row">
-          <div class="col-md-2">
-           <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-           <p class="text-secondary text-center">منذ 15 دقيقة</p>
-          </div>
-          <div class="col-md-10">
-           <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
-           </p>
-           <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-           </p>
-           <p>
-            <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- End comment card 3 -->
-     </div>
-
-     <!-- comment card 4 -->
-     <div class="card mb-3 ">
-      <div class="card-body">
-       <div class="row">
-        <div class="col-2">
-         <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-         <p class="text-secondary text-center">منذ 15 دقيقة</p>
-        </div>
-        <div class="col-10">
-         <p>
-          <a class="float-right" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman
-            Akash</strong></a>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-
-         </p>
-         <div class="clearfix"></div>
-         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-          تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-         </p>
-         <p>
-          <a class="float-right btn btn-outline-info  mr-2"> <i class="fa fa-reply"></i> الردور</a>
-          <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-         </p>
-        </div>
-       </div>
-       <div class="card card-inner ml-5 mt-3 ">
-        <div class="card-body">
-         <div class="row">
-          <div class="col-md-2">
-           <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
-           <p class="text-secondary text-center">منذ 15 دقيقة</p>
-          </div>
-          <div class="col-md-10">
-           <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
-           </p>
-           <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-           </p>
-           <p>
-            <a class="float-right btn text-white btn-info "> <i class="fa fa-heart"></i> أعجبي</a>
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- End comment card 4 -->
-     </div>
-
-     <!-- End commets contaier -->
     </div>
 
     <!-- suggestions -->
-    <div class="col-lg-5">
+    <div class="col-lg-5 mt-5 " id="propositions">
 
-     <h2 class="my-5 display-6 px-3 text text-boler">الاقتراحات</h2>
+     <h2>الاقتراحات</h2>
 
-     <!-- proposition 1 -->
-     <div class="card p-2 mb-4">
+     <script>
+      $.ajax({
+       url: "channelsInfo.json",
+       type: "GET",
+       success: function (data, status) {
+        var channelsInfo='';
+        $.each(data, function (data, value) {
+         channelsInfo +=`
+         <!-- proposition 2 -->
+     <div class="card p-2 mb-4 ">
       <div class="row">
        <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
+        <img src='${value.thumbnailImg}' alt="" class="w-100">
        </div>
        <div class="col-sm-7">
         <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted   mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img   ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 1 -->
-     </div>
-
-     <!-- proposition 2 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+         <a href="#" class="text-left">${value.title}</a>
         </div>
         <small class="text-muted d-sm-block mb-1 ">
          <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
+          <span class="d-inline-block tex">${value.views}</span>
          </i>
         </small>
         <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
+         <img src="${value.channelLogo}" alt="chanel image" class="rounded-circle" style="width:30px">
+         <span>${value.channelName}</span>
         </a>
        </div>
       </div>
       <!-- End proposition 2 -->
      </div>
+         `
+ })
+ $('#propositions').append(channelsInfo)
+       }
 
-     <!-- proposition 3 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 3 -->
-     </div>
+      })
+     </script>
 
-     <!-- proposition 4 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 4 -->
-     </div>
-
-     <!-- proposition 5 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 5 -->
-     </div>
-
-     <!-- proposition 6 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 6 -->
-     </div>
-
-     <!-- proposition 7 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 7 -->
-     </div>
-
-     <!-- proposition 8 -->
-     <div class="card p-2 mb-4">
-      <div class="row">
-       <div class="col-sm-5">
-        <img src="src/img/thumbnail/app.jpg" alt="" class="w-100 ">
-       </div>
-       <div class="col-sm-7">
-        <div class="card-block mx-2 pl-0 ml-0">
-         <a href="#" class="text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
-        </div>
-        <small class="text-muted d-sm-block mb-1 ">
-         <i class="mr-2 fa-solid fa-film">
-          <span class="d-inline-block tex"> 120 ألف مشاهدة </span>
-         </i>
-        </small>
-        <a href="chanel.html" class="chanel-img d-sm-block ">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle" style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-       </div>
-      </div>
-      <!-- End proposition 8 -->
-     </div>
-
-     <!-- End suggestions & commets containr -->
+<!-- End suggestions & commets containr -->
     </div>
-
    </div>
-
   </div>
- </div>
- <script src="js/jquery-3.5.1.slim.min.js"></script>
- <script src="js/popper.min.js"></script>
- <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>

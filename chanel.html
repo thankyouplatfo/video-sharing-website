@@ -10,6 +10,10 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- js files -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="py-5 rtl">
@@ -152,10 +156,13 @@
       </div>
       <div class="col-md-6">
        <div class="card-block">
-        <a href="#" class="navbar-brand ml-0 mb-2 mt-0 pt-0  text-left">دورة تطوير واجهات المستخدم - ابو العز</a>
+        <a href="#" class="navbar-brand ml-0 mb-2 mt-0 pt-0  text-left">دورة تطوير واجهات المستخدم - ابو
+         العز</a>
         <p class="text-left">
-         Deserunt reprehenderit incididunt incididunt eu incididunt id. Lorem irure cupidatat incididunt commodo.
-         Deserunt do reprehenderit elit eu commodo sint proident voluptate excepteur pariatur ut duis proident. Tempor
+         Deserunt reprehenderit incididunt incididunt eu incididunt id. Lorem irure cupidatat incididunt
+         commodo.
+         Deserunt do reprehenderit elit eu commodo sint proident voluptate excepteur pariatur ut duis proident.
+         Tempor
          ea eiusmod eiusmod ad cupidatat et ullamco of
         </p>
         <small class="text-muted">
@@ -182,379 +189,55 @@
    <div class="m-0">
     <div class="conent px-4">
      <h2 class="my-5 display-1 px-3 text text-boler">الأخيرة</h2>
-     <div class="row ">
-      <!-- video card -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
+     <div class="row " id="channelsInfo">
 
-       <div class="card p-0 mb-3">
+      <script>
+       $.ajax({
+        url: "channelsInfo.json",
+        type: "GET",
+        dataType: "json",
+        success: function (data, status) {
+         var channelsInfo = '';
+         $.each(data, function (data, value) {
+          channelsInfo += `
+           <!-- video card ${value.userId} -->
+           <div class="col-sm-6 col-md-4 col-lg-3">
 
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
+           <div class="card p-0 mb-3">
 
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
+             <a href="watch.html">
+             <img src="${value.thumbnailImg}" class="card-img-top" alt="...">
+             <div class="card-body p-0 ">
+               <h5 class="card-title p-0 m-2 ">${value.title}</h5>
+             </div>
+             </a>
 
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
+             <div class="card-footer">
+             <small class="text-muted">
+               <i class="fa-solid d-block py-1 fa-film">
+               <span class="d-inline-block px-1 ">${value.views}</span>
+               </i>
+               <i class="fa-solid d-block py-1 fa-stopwatch">
+               <span class="d-inline-block px-1 ">${value.before}</span>
+               </i>
+             </small>
+             </div>
 
-       </div>
-       <!-- End video card -->
-      </div>
+             <a href="chanel.html" class="chanel-img">
+             <img src="${value.channelLogo}" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
+             <span>${value.channelName}</span>
+             </a>
 
-      <!-- video card 2 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 2 -->
-      </div>
-
-      <!-- video card 3 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 3 -->
-      </div>
-
-      <!-- video card 4 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 4 -->
-      </div>
-
-      <!-- video card 5 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 5 -->
-      </div>
-
-      <!-- video card 6 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 6 -->
-      </div>
-
-      <!-- video card 7 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 7 -->
-      </div>
-
-      <!-- video card 8 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 8 -->
-      </div>
-
-      <!-- video card 9 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 9 -->
-      </div>
-
-      <!-- video card 10 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 10 -->
-      </div>
-
-      <!-- video card 11 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 11 -->
-      </div>
-
-      <!-- video card 12 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-       <div class="card p-0 mb-3 gap-1  ">
-
-        <a href="watch.html">
-         <img src="src/img/thumbnail/restful.jpg" class="card-img-top" alt="...">
-         <div class="card-body p-0 ">
-          <h5 class="card-title p-0 m-2 ">تعلم خرائط جوجل</h5>
-         </div>
-        </a>
-
-        <div class="card-footer">
-         <small class="text-muted">
-          <i class="fa-solid d-block py-1 fa-film">
-           <span class="d-inline-block px-1 ">ثلاثة الاف مشاهدة</span>
-          </i>
-          <i class="fa-solid d-block py-1 fa-stopwatch">
-           <span class="d-inline-block px-1 ">قبل خمس ساعات</span>
-          </i>
-         </small>
-        </div>
-
-        <a href="chanel.html" class="chanel-img">
-         <img src="src/img/ch-logo.png" alt="chanel image" class="rounded-circle m-2 " style="width:30px">
-         <span>معتز تيوب</span>
-        </a>
-
-       </div>
-       <!-- End video card 12 -->
-      </div>
+           </div>
+           <!-- End video card ${value.id} -->
+           </div>
+           `
+         })
+         //
+         $('#channelsInfo').append(channelsInfo)
+        }
+       })
+      </script>
 
      </div>
     </div>

@@ -1,0 +1,93 @@
+[
+ {
+  "id": 1,
+  "userId": 1,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 30 دقيقة",
+  "before2": "منذ 15 دقيقة",
+  "userNameMale": "آدم الخديدي",
+  "userNameGirle": "رزان حسن القرشي",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 2,
+  "userId": 2,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 45 دقيقة",
+  "before2": "منذ 30 دقيقة",
+  "userNameMale": "آزر الجبل",
+  "userNameGirle": "دارين السفياني",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 3,
+  "userId": 3,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 1 ساعة",
+  "before2": "منذ 45 دقيقة",
+  "userNameMale": "آسر الجبل",
+  "userNameGirle": "تالين بريمه",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 4,
+  "userId": 4,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 1 ساعة 15 دقيقة",
+  "before2": "منذ 1 ساعة",
+  "userNameMale": "أبسل الحارثي",
+  "userNameGirle": "تاله ابو زيد",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 5,
+  "userId": 5,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 1 ساعة 30 دقيقة",
+  "before2": "منذ 1 ساعة 15 دقيقة",
+  "userNameMale": "أبلج ابو زيد",
+  "userNameGirle": "ايلاف الحارثي",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 6,
+  "userId": 6,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 1 ساعة 45 دقيقة",
+  "before2": "منذ 1 ساعة 30 دقيقة",
+  "userNameMale": "أبي بريمه",
+  "userNameGirle": "اسرار الجبل",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span><span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ },
+ {
+  "id": 7,
+  "userId": 7,
+  "maleImage": "/src/img/maleImage.svg",
+  "girlImage": "/src/img/girlImage.svg",
+  "before": "منذ 2 ساعة  ",
+  "before2": "منذ 1 ساعة 45 دقيقة",
+  "userNameMale": "محمد السفياني",
+  "userNameGirle": "ابرار الجبل",
+  "comment": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
+  "comment2": "إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.",
+  "stars": "<span class='float-left'><i class='text-warning fa fa-star'></i></span>"
+ }
+]

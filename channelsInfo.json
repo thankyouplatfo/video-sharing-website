@@ -1,0 +1,178 @@
+[
+ {
+  "userId": 1,
+  "id": 1,
+  "thumbnailImg": "/src/img/thumbnail/app.jpg",
+  "title": "تعلم بناء تطبيقات الهاتف",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "11 ساعة",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 2,
+  "id": 2,
+  "thumbnailImg": "/src/img/thumbnail/cordova.jpg",
+  "title": "تعلم بناء تطبيقات الهاتف بواسطة cordova",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "16 ساعة",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 3,
+  "id": 3,
+  "thumbnailImg": "/src/img/thumbnail/database.jpg",
+  "title": "تعلم بناء  قواعد البيانات",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 4,
+  "id": 4,
+  "thumbnailImg": "/src/img/thumbnail/devtools.jpg",
+  "title": "تعلم استخدام أدوات المتصفح ",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 5,
+  "id": 5,
+  "thumbnailImg": "/src/img/thumbnail/frontend.jpg",
+  "title": "تعلم بناء واجهات المستخدم",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 6,
+  "id": 6,
+  "thumbnailImg": "/src/img/thumbnail/khamsat1.png",
+  "title": " اساسيات استخدام موقع خمسات ج1",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 7,
+  "id": 7,
+  "thumbnailImg": "/src/img/thumbnail/khamsat2.jpg",
+  "title": " اساسيات استخدام موقع خمسات ج2",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 8,
+  "id": 8,
+  "thumbnailImg": "/src/img/thumbnail/khamsat3.png",
+  "title": " اساسيات استخدام موقع خمسات ج3",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 9,
+  "id": 9,
+  "thumbnailImg": "/src/img/thumbnail/khamsat4.png",
+  "title": " اساسيات استخدام موقع خمسات ج4",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 10,
+  "id": 10,
+  "thumbnailImg": "/src/img/thumbnail/mostaql.png",
+  "title": " اساسيات استخدام موقع مستقل ج1",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 11,
+  "id": 11,
+  "thumbnailImg": "/src/img/thumbnail/mostaql1.jpg",
+  "title": " اساسيات استخدام موقع مستقل ج2",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 12,
+  "id": 12,
+  "thumbnailImg": "/src/img/thumbnail/mostaql2.png",
+  "title": " اساسيات استخدام موقع مستقل ج3",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 13,
+  "id": 13,
+  "thumbnailImg": "/src/img/thumbnail/php.jpg",
+  "title": "تعلم بناء تطبيقات الويب بواسطة لغة php",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 14,
+  "id": 14,
+  "thumbnailImg": "/src/img/thumbnail/restful.jpg",
+  "title": "تعلم بناء واجهات برمجة التطبيقات ",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 15,
+  "id": 15,
+  "thumbnailImg": "/src/img/thumbnail/ruby.jpg",
+  "title": " اساسيات   لغة روبي ج1",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ },
+ {
+  "userId": 16,
+  "id": 16,
+  "thumbnailImg": "/src/img/thumbnail/ruby1.jpg",
+  "title": " اساسيات   لغة روبي ج2",
+  "description": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+  "views": "999",
+  "before": "5 ساعات",
+  "channelLogo": "/src/img/ch-logo.png",
+  "channelName": "ابو العز التقنية"
+ }
+]
