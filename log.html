@@ -33,7 +33,7 @@
      <a class="nav-link ml-lg-3" href="index.html">الحديثة</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link " href="index.html">الرائجة</a>
+     <a class="nav-link " href="#">السجل</a>
     </li>
     <li class="nav-item">
      <a class="nav-link btn btn-info text-white d-inline-block" href="index.html" data-toggle="modal"
@@ -87,69 +87,93 @@
  </div>
 
  <!-- content -->
- <div class="container" id="channelsInfo">
-
-  <script>
-   $.ajax({
-    url: 'channelsInfo.json',
-    type: 'GET',
-    dataType: 'json',
-    //
-    success: function (data, status) {
-
-     var channelsInfo='';
-
-     $.each(data, function (data, value) {
-      channelsInfo +=
-       //
-       `
-     <!-- video card ${value.id} -->
-     <div class="row">
-      <div class="col-12 my-3">
-       <div class="card">
-        <div class="card-horizontal d-md-flex d-block ">
-         <div class="img-square-wrapper">
-          <a href="watch.html">
-           <img class="w-100 " src="${value.thumbnailImg}" alt="Card image cap">
-          </a>
-         </div>
-         <div class="card-body p-2 ">
-          <a href="watch.html">
-           <h4 class="card-title">${value.title}</h4>
-          </a>
-          <p class="card-text">${value.description}</p>
-          <small class="text-muted">
-           <i class="mr-2 fa-solid fa-film">
-            <span class="d-inline-block">${value.views}</span>
-           </i>
-           <i class="mr-2 fa-solid fa-stopwatch">
-            <span class="d-inline-block">${value.before}</span>
-           </i>
-          </small>
-          <a href="chanel.html" class="chanel-img">
-           <img src="${value.channelLogo}" alt="chanel image" class="rounded-circle" style="width:30px">
-           <span>${value.channelName}</span>
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- End video card ${value.id}-->
+ <div class="history-page pt-5 ">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-3 p-0 m-0">
+     <input type="search" name="" id="" placeholder="أبحث  في التاريخ" class="form-control border-0 ">
+     <hr>
+     <label for="" class="font-weight-bolder">نوع السجل:</label>
+     <div class="list-group list-group-flush p-0 m-0" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+       href="#list-home">سجل المشاهدة</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+       role="tab">سجل البحث</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+       href="#list-messages">التعليقات</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+       href="#list-settings">المنتدى</a>
      </div>
-     `
-      //
+     <label for="" class="mt-5 font-weight-bolder">التاريخ:</label>
+     <div class="list-group list-group-flush p-0 m-0" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+       href="#list-home">24 ساعة</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+       role="tab">ثلاثة أيام</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+       href="#list-messages">اسبوع</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+       href="#list-settings">شهر</a>
+     </div>
+    </div>
+    <div class="col-lg-9" id="channelsInfo">
+     <script>
+      $.ajax({
+       url: 'channelsInfo.json',
+       type: 'GET',
+       dataType: 'json',
+       //
+       success: function (data, status) {
 
-     })
+        var channelsInfo = '';
 
-     $('#channelsInfo').append(channelsInfo)
+        $.each(data, function (data, value) {
+         channelsInfo += `
+         <!-- video card ${value.id} -->
+         <div class="row">
+          <div class="col-12 mb-2 ">
+           <div class="card">
+            <div class="card-horizontal d-md-flex d-block ">
+             <div class="img-square-wrapper">
+              <a href="watch.html">
+               <img class="w-100 " src="${value.thumbnailImg}" alt="Card image cap">
+              </a>
+             </div>
+             <div class="card-body p-2 ">
+              <a href="watch.html">
+               <h4 class="card-title">${value.title}</h4>
+              </a>
+              <p class="card-text">${value.description}</p>
+              <small class="text-muted">
+               <i class="mr-2 fa-solid fa-film">
+                <span class="d-inline-block">${value.views}</span>
+               </i>
+               <i class="mr-2 fa-solid fa-stopwatch">
+                <span class="d-inline-block">${value.before}</span>
+               </i>
+              </small>
+              <a href="chanel.html" class="chanel-img">
+               <img src="${value.channelLogo}" alt="chanel image" class="rounded-circle" style="width:30px">
+               <span>${value.channelName}</span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- End video card ${value.id}-->
+         </div>
+         `;
+        })
+        //
+        $('#channelsInfo').append(channelsInfo)
+       }
+      })
+     </script>
+    </div>
+   </div>
+   <!-- End content -->
+  </div>
 
-    }
-
-   })
-
-  </script>
-
-  <!-- End content -->
  </div>
 
  <script src="js/jquery-3.5.1.slim.min.js"></script>

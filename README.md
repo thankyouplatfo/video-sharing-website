@@ -19,5 +19,7 @@
 09. العنصر [video](https://wiki.hsoub.com/HTML/video) وخصائصه
 10. صفحة المشاهدة
 11. القائمة المنسدلة [dropdown](https://getbootstrap.com/docs/4.5/components/dropdowns/) والتعليقات Comments 
-* 
+* تطبيقا لمبدأ البرمجة الأول لا تكرر نفسك | قررت إضافة الملفين channelsInfo.json , commets.json لتقليل الشفرة ومنع التكرار ما امكن ذلك يمكنك الاستعانة بهما في اي صفحة من صفحات المشروع بواسطة تقنية ajax
+12. القوائم [list-group](https://getbootstrap.com/docs/4.5/components/list-group/) في Bootstrap
+
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
