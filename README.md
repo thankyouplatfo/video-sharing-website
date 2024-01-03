@@ -21,5 +21,6 @@
 11. القائمة المنسدلة [dropdown](https://getbootstrap.com/docs/4.5/components/dropdowns/) والتعليقات Comments 
 * تطبيقا لمبدأ البرمجة الأول لا تكرر نفسك | قررت إضافة الملفين channelsInfo.json , commets.json لتقليل الشفرة ومنع التكرار ما امكن ذلك يمكنك الاستعانة بهما في اي صفحة من صفحات المشروع بواسطة تقنية ajax
 12. القوائم [list-group](https://getbootstrap.com/docs/4.5/components/list-group/) في Bootstrap
+13. جولة على [بقية المكونات](https://getbootstrap.com/docs/4.5/components/alerts/)
 
 قم بمتابعة آخر اعمالي من خلال متابعة [هذا الحساب](https://github.com/thankyouplatfo)
