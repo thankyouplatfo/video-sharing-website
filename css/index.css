@@ -1,0 +1,67 @@
+/*golbal setting*/
+@font-face {
+ font-family: 'cairoPlayRegular';
+ src: url('../src/fonts/static/CairoPlay-Regular.ttf');
+}
+
+#top-menu .navbar-light {
+ background-color: white !important;
+}
+
+/*body*/
+body {
+ font-family: 'cairoPlayRegular', Courier, monospace;
+ background-color: #f2f2f2;
+}
+
+button {
+ background-color: transparent !important;
+ color: black !important;
+ border-color: black !important;
+}
+
+button:hover {
+ color: #fff !important;
+ background-color: black !important;
+}
+
+#top-menu .video-icon {
+ background-color: black;
+ color: #F2F2F2;
+ border-radius: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link {
+ color: #F2F2F2;
+ background: black;
+}
+
+button,
+.navbar .navbar-nav .nav-link,
+.nav-link {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+ border-radius: 0.25rem !important;
+ padding: 0.25rem !important;
+ margin: 0.25rem !important;
+ font-size: larger !important;
+}
+
+.navbar .login {
+ color: black;
+}
+
+.close:hover {
+ color: black !important;
+ background-color: transparent !important;
+}
+
+button,
+.form-control:focus {
+ outline: none !important;
+ box-shadow: none !important;
+ border-color: black;
+}
