@@ -2,107 +2,117 @@
 <html lang="ar">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>معتز تيوب</title>
-  <!-- css files -->
-  <link rel="stylesheet" href="css/bootstrap-rtl.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- js files -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>معتز تيوب</title>
+   <!-- css files -->
+   <link rel="stylesheet" href="css/bootstrap-rtl.css">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <!-- js files -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="py-5 rtl">
-  <!-- top menu -->
-  <div id="top-menu">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 ">
-      <a class=" lead " href="index.html">
-        <span class="video-icon px-2 ">معتز تيوب<i class="ml-2 fas fa-play-circle"></i></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+   <!-- top menu -->
+   <div id="top-menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 ">
+         <a class=" lead " href="index.html">
+            <span class="video-icon px-2 ">معتز تيوب<i class="ml-2 fas fa-play-circle"></i></span>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+         </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-lg-auto">
-          <li class="nav-item p-0 m-0 active">
-            <a class="nav-link " href="#">لك</a>
-          </li>
-          <li class="nav-item p-0 m-0 ">
-            <a class="nav-link " href="#">الحديثة</a>
-          </li>
-          <li class="nav-item p-0 m-0 ">
-            <a class="nav-link " href="log.html">السجل</a>
-          </li>
-        </ul>
-        <!-- search form -->
-        <div class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2 shadow-none " type="search" placeholder="ابحث">
-          <button onclick="location.hrer='search.html';" class="btn btn-outline-info my-2 my-sm-0"
-            type="submit">ابحث</button>
-          <!-- End search form -->
-        </div>
-        <a class="nav-link login" href="#" data-toggle="modal"
-          data-target="#exampleModal" >الدخول</a>
-      </div>
-      <!-- End top menu -->
-    </nav>
-  </div>
-
-  <!-- login modal -->
-  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered ">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="email" class="col-form-label">البريد الإلكتروني:</label>
-              <input type="email" class="form-control" id="email">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+               <li class="nav-item p-0 m-0 active">
+                  <a class="nav-link " href="#">لك</a>
+               </li>
+               <li class="nav-item p-0 m-0 ">
+                  <a class="nav-link " href="#">الحديثة</a>
+               </li>
+               <li class="nav-item p-0 m-0 ">
+                  <a class="nav-link " href="log.html">السجل</a>
+               </li>
+            </ul>
+            <!-- search form -->
+            <div class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2 shadow-none " type="search" placeholder="ابحث">
+               <button onclick="location.hrer='search.html';" class="btn btn-outline-info my-2 my-sm-0"
+                  type="submit">ابحث</button>
+               <!-- End search form -->
             </div>
-            <div class="form-group">
-              <label for="password" class="col-form-label">كلمة المرور:</label>
-              <input type="password" class="form-control" id="password">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a href="index.html">انشاء حساب</a>
-          <a href="index.html" class="mx-auto ">نسيت كلمة المرور </a>
-          <button type="button" class="btn btn-primary">دخول</button>
-        </div>
-      </div>
-      <!-- End login modal -->
-    </div>
-  </div>
+            <a class="nav-link login" href="#" data-toggle="modal" data-target="#exampleModal">الدخول</a>
+         </div>
+         <!-- End top menu -->
+      </nav>
+   </div>
 
-  <!-- contianer videos -->
-  <div class="m-0">
-    <div class="conent px-4">
-      <h2 class="my-5 display-1 px-3 ">لك</h2>
-      <div class="row" id="channelsInfo">
-        <script>
-          $.ajax({
-            url: "channelsInfo.json",
-            type: "GET",
-            dataType: "json",
-            success: function (data, status) {
-              var channelsInfo = '';
-              $.each(data, function (data, value) {
-                channelsInfo += `
+   <!-- login modal -->
+   <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">
+                  تسجيل الدخول</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="form-group">
+                     <label for="email" class="col-form-label">البريد
+                        الإلكتروني:</label>
+                     <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                     <label for="password" class="col-form-label">كلمة
+                        المرور:</label>
+                     <input type="password" class="form-control" id="password">
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <a href="index.html">انشاء حساب</a>
+               <a href="index.html" class="mx-auto ">نسيت
+                  كلمة المرور </a>
+               <button type="button" class="btn btn-primary">دخول</button>
+            </div>
+         </div>
+         <!-- End login modal -->
+      </div>
+   </div>
+
+   <!-- contianer videos -->
+   <div class="m-0">
+      <div class="conent px-4">
+         <h2 class="my-5 display-1 px-3 ">لك</h2>
+         <div class="row" id="channelsInfo">
+            <script>
+               $.ajax({
+                  url: "channelsInfo.json",
+                  type: "GET",
+                  dataType: "json",
+                  success: function (data, status) {
+                     var channelsInfo = '';
+                     $.each(data, function (data, value) {
+                        channelsInfo += `
         <!-- video card ${value.id} -->
         <div class="col-sm-6 col-md-4 col-lg-3">
+         
 
          <div class="card p-0 mb-3">
-
+         <div class="card-icons">
           <a href="watch.html">
            <img src="${value.thumbnailImg}" class="card-img-top" alt="...">
+           <time>${value.time}</time>
+           <i class="fas fa-play fa-2x"></i>
+            <span class='bg-play'></span>
+          <a>
+         </div>
+          <a href="watch.html">
            <div class="card-body p-0 ">
             <h5 class="card-title p-0 m-2 ">${value.title}</h5>
            </div>
@@ -128,21 +138,21 @@
          <!-- End video card ${value.id} -->
         </div>
         `
-              })
-              //
-              $('#channelsInfo').append(channelsInfo)
-            }
-          })
-        </script>
+                     })
+                     //
+                     $('#channelsInfo').append(channelsInfo)
+                  }
+               })
+            </script>
+         </div>
       </div>
-    </div>
-    <!-- End contianer videos -->
-  </div>
+      <!-- End contianer videos -->
+   </div>
 
-  <script src="js/jquery-3.5.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/index.js"></script>
+   <script src="js/jquery-3.5.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/index.js"></script>
 </body>
 
 </html>

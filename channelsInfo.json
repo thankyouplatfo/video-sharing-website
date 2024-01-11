@@ -8,6 +8,7 @@
   "views": "999",
   "before": "11 ساعة",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "2:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -19,6 +20,7 @@
   "views": "999",
   "before": "16 ساعة",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "3:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -30,6 +32,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "4:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -41,6 +44,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "6:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -52,6 +56,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "8:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -63,6 +68,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "12:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -74,6 +80,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "16:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -85,6 +92,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "36:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -96,6 +104,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "1:4:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -107,6 +116,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "1:14:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -118,6 +128,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "4:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -129,6 +140,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "5:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -140,6 +152,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "8:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -151,6 +164,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "10:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -162,6 +176,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "15:00",
   "channelName": "ابو العز التقنية"
  },
  {
@@ -173,6 +188,7 @@
   "views": "999",
   "before": "5 ساعات",
   "channelLogo": "/src/img/ch-logo.png",
+  "time": "20:00",
   "channelName": "ابو العز التقنية"
  }
 ]
